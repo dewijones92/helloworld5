@@ -1,0 +1,11 @@
+Opening file/dir: ~/tmp/haskellTut/hell5/helloworld5/src/Lib.hs
+Unable to load color "#aafaf87"
+Page has 6 lines (0 + 6)
+Quit
+Auto-evilification could not remap these functions in map ‘edebug-mode-map’:
+   - ‘edebug-Go-nonstop-mode’ originally mapped on ‘G’
+Showing all blocks ... done
+LSP :: Connected to [lsp-haskell:1155087/starting].
+LSP :: lsp-haskell has exited (finished)
+Server lsp-haskell:1155087/starting exited with status exit(check corresponding stderr buffer for detai\
+ls). Do you want to restart it? (y or n) n

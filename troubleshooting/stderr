@@ -1,0 +1,20 @@
+No 'hie.yaml' found. Try to discover the project type!
+Run entered for haskell-language-server-wrapper(haskell-language-server-wrapper) Version 1.7.0.0, Git revision bafb229b3c7940347a128f0e157ac246d970e605 (2841 commits) x86_64 ghc-9.2.3
+Current directory: /home/dewi/tmp/haskellTut/hell5/helloworld5
+Operating system: linux
+Arguments: ["--lsp","-d","-l","/tmp/hls.log"]
+Cradle directory: /home/dewi/tmp/haskellTut/hell5/helloworld5
+Cradle type: Stack
+
+Tool versions found on the $PATH
+cabal:		3.6.2.0
+stack:		2.7.5
+ghc:		9.2.3
+
+
+Consulting the cradle to get project GHC version...
+Project GHC version: 9.2.3
+haskell-language-server exe candidates: ["haskell-language-server-9.2.3","haskell-language-server"]
+Launching haskell-language-server exe at:/home/dewi/.local/bin/haskell-language-server
+ 
+Process lsp-haskell stderr finished

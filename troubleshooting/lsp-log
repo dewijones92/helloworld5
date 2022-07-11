@@ -1,0 +1,8 @@
+Command "haskell-language-server-wrapper --lsp -d -l /tmp/hls.log" is present on the path.
+Command "haskell-language-server-wrapper --lsp -d -l /tmp/hls.log" is present on the path.
+Found the following clients for /home/dewi/tmp/haskellTut/hell5/helloworld5/src/Lib.hs: (server-id lsp-haskell, priority 0)
+The following clients were selected based on priority: (server-id lsp-haskell, priority 0)
+Command "haskell-language-server-wrapper --lsp -d -l /tmp/hls.log" is present on the path.
+Command "haskell-language-server-wrapper --lsp -d -l /tmp/hls.log" is present on the path.
+Found the following clients for /home/dewi/tmp/haskellTut/hell5/helloworld5/src/Lib.hs: (server-id lsp-haskell, priority 0)
+The following clients were selected based on priority: (server-id lsp-haskell, priority 0)
