@@ -1,0 +1,35 @@
+2022-07-11T13:08:44.372726Z | Info | No log file specified; using stderr.
+2022-07-11T13:08:44.373179Z | Info | haskell-language-server version: 1.7.0.0 (GHC: 9.2.3) (PATH: /home/dewi/.local/bin/haskell-language-server) (GIT hash: bafb229b3c7940347a128f0e157ac246d970e605)
+2022-07-11T13:08:44.373721Z | Info | Directory: /home/dewi/tmp/haskellTut/hell5/helloworld5
+2022-07-11T13:08:44.373845Z | Info | Starting (haskell-language-server) LSP server...
+  GhcideArguments {argsCommand = LSP, argsCwd = Nothing, argsShakeProfiling = Nothing, argsTesting = False, argsExamplePlugin = False, argsDebugOn = True, argsLogFile = Nothing, argsThreads = 0, argsProjectGhcVersion = False}
+  PluginIds: [ pragmas
+             , floskell
+             , fourmolu
+             , ormolu
+             , stylish-haskell
+             , rename
+             , callHierarchy
+             , class
+             , eval
+             , importLens
+             , qualifyImportedNames
+             , refineImports
+             , moduleName
+             , hlint
+             , alternateNumberFormat
+             , selectionRange
+             , changeTypeSignature
+             , gadt
+             , ghcide-hover-and-symbols
+             , ghcide-code-actions-imports-exports
+             , ghcide-code-actions-type-signatures
+             , ghcide-code-actions-bindings
+             , ghcide-code-actions-fill-holes
+             , ghcide-completions
+             , ghcide-type-lenses
+             , ghcide-core
+             , LSPRecorderCallback ]
+2022-07-11T13:08:44.375053Z | Info | Logging heap statistics every 60.00s
+ 2022-07-11T13:08:44.381272Z | Info | Staring LSP server...
+If you are seeing this in a terminal, you probably should have run WITHOUT the --lsp option!

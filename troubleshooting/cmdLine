@@ -1,0 +1,306 @@
+2022-07-11T12:32:54.953977Z | Info | No log file specified; using stderr.
+2022-07-11T12:32:54.954416Z | Info | haskell-language-server version: 1.7.0.0 (GHC: 9.2.3) (PATH: /home/dewi/.local/bin/haskell-language-server) (GIT hash: bafb229b3c7940347a128f0e157ac246d970e605)
+2022-07-11T12:32:54.954820Z | Info | Directory: /home/dewi/tmp/haskellTut/hell5/helloworld5
+2022-07-11T12:32:54.955019Z | Info | Logging heap statistics every 60.00s
+ ghcide setup tester in /home/dewi/tmp/haskellTut/hell5/helloworld5.
+Report bugs at https://github.com/haskell/haskell-language-server/issues
+
+Step 1/4: Finding files to test in /home/dewi/tmp/haskellTut/hell5/helloworld5
+Found 3 files
+
+Step 2/4: Looking for hie.yaml files that control setup
+Found 1 cradle
+  ()
+
+Step 3/4: Initializing the IDE
+2022-07-11T12:32:54.958065Z | Debug | Initializing exports map from hiedb
+2022-07-11T12:32:54.958398Z | Debug | Shake session initialized
+
+Step 4/4: Type checking the files
+2022-07-11T12:32:54.959207Z | Debug | Done initializing exports map from hiedb. Size: 2
+2022-07-11T12:32:54.959987Z | Info | Cradle path: test/Spec.hs
+2022-07-11T12:32:54.960100Z | Warning | No [cradle](https://github.com/mpickering/hie-bios#hie-bios) found for test/Spec.hs.
+Proceeding with [implicit cradle](https://hackage.haskell.org/package/implicit-hie).
+You should ignore this message, unless you see a 'Multi Cradle: No prefixes matched' error.
+2022-07-11T12:32:54.963577Z | Debug | Cradle: Cradle {cradleRootDir = "/home/dewi/tmp/haskellTut/hell5/helloworld5", cradleOptsProg = CradleAction: Stack}
+2022-07-11 13:32:55.109530494 [ThreadId 38] INFO hie-bios:	Stack has not been tested with GHC versions above 9.0, and using 9.2.3, this may fail
+2022-07-11 13:32:55.162647691 [ThreadId 38] INFO hie-bios:	Stack has not been tested with Cabal versions above 3.4, but version 3.6.3.0 was found, this may fail
+2022-07-11 13:32:55.240310287 [ThreadId 38] INFO hie-bios:	Using main module: 1. Package `helloworld5' component helloworld5:test:helloworld5-test with main-is file: /home/dewi/tmp/haskellTut/hell5/helloworld5/test/Spec.hs
+2022-07-11 13:32:55.298122846 [ThreadId 38] INFO hie-bios:	helloworld5> initial-build-steps (lib + test)
+2022-07-11 13:32:55.310176139 [ThreadId 38] INFO hie-bios:	helloworld5> Test running disabled by --no-run-tests flag.
+2022-07-11 13:32:55.310276946 [ThreadId 38] INFO hie-bios:	Completed 2 action(s).
+2022-07-11 13:32:55.377960418 [ThreadId 38] INFO hie-bios:	The following GHC options are incompatible with GHCi and have not been passed to it: -threaded
+2022-07-11 13:32:55.378066204 [ThreadId 38] INFO hie-bios:	Configuring GHCi with the following packages: helloworld5
+2022-07-11 13:32:55.558910512 [ThreadId 43] INFO hie-bios:	Stack has not been tested with GHC versions above 9.0, and using 9.2.3, this may fail
+2022-07-11 13:32:55.611256338 [ThreadId 43] INFO hie-bios:	Stack has not been tested with Cabal versions above 3.4, but version 3.6.3.0 was found, this may fail
+2022-07-11 13:32:55.752714273 [ThreadId 43] INFO hie-bios:	Stack has not been tested with GHC versions above 9.0, and using 9.2.3, this may fail
+2022-07-11 13:32:55.804565813 [ThreadId 43] INFO hie-bios:	Stack has not been tested with Cabal versions above 3.4, but version 3.6.3.0 was found, this may fail
+2022-07-11 13:32:55.815989427 [ThreadId 45] INFO hie-bios:	/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/install/x86_64-linux-tinfo6/757942beef36abb5767af08b907075e026390116ad91957d758e122bd1dc518c/9.2.3/pkgdb:/home/dewi/.stack/snapshots/x86_64-linux-tinfo6/757942beef36abb5767af08b907075e026390116ad91957d758e122bd1dc518c/9.2.3/pkgdb:/home/dewi/.stack/programs/x86_64-linux/ghc-tinfo6-9.2.3/lib/ghc-9.2.3/package.conf.d
+2022-07-11T12:32:56.620213Z | Debug | Session loading result: Right (ComponentOptions {componentOptions = ["-i","-odir=/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/odir","-hidir=/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/odir","-hide-all-packages","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/helloworld5-test","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/test","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/helloworld5-test/autogen","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/global-autogen","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/helloworld5-test/helloworld5-test-tmp","-stubdir=/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build","-package-id=base-4.16.2.0","-package-id=helloworld5-0.1.0.0-5sW9LmCEHg1CeB0emcgCf9","-rtsopts","-with-rtsopts=-N","-optP-include","-optP/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/ghci/bbe0195e/cabal_macros.h","-ghci-script=/tmp/haskell-stack-ghci/34592b0e/ghci-script","-package-db","/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/install/x86_64-linux-tinfo6/757942beef36abb5767af08b907075e026390116ad91957d758e122bd1dc518c/9.2.3/pkgdb","-package-db","/home/dewi/.stack/snapshots/x86_64-linux-tinfo6/757942beef36abb5767af08b907075e026390116ad91957d758e122bd1dc518c/9.2.3/pkgdb","-package-db","/home/dewi/.stack/programs/x86_64-linux/ghc-tinfo6-9.2.3/lib/ghc-9.2.3/package.conf.d"], componentRoot = "/home/dewi/tmp/haskellTut/hell5/helloworld5", componentDependencies = ["helloworld5.cabal","package.yaml","stack.yaml"]},"/home/dewi/.stack/programs/x86_64-linux/ghc-tinfo6-9.2.3/lib/ghc-9.2.3")
+2022-07-11T12:32:56.653615Z | Info | Interface files cache directory: /home/dewi/.cache/ghcide/main-ea5d48c95540f955e5ef7785d2126f3a56e15844
+2022-07-11T12:32:56.653800Z | Info | Making new HscEnv. In-place unit ids: [main]
+2022-07-11T12:32:56.660841Z | Debug | New component cache HscEnvEq: (([],Just HscEnvEq 5),fromList [("helloworld5.cabal",Just 2022-07-09 09:28:55.343034217 UTC),("package.yaml",Just 2022-07-09 09:28:55.339034298 UTC),("stack.yaml",Just 2022-07-09 09:34:10.876687819 UTC)])
+2022-07-11T12:32:56.662448Z | Debug | Known files updated:
+  fromList [(TargetModule (ModuleName "Paths_helloworld5"),fromList ["/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/helloworld5-test/autogen/Paths_helloworld5.hs"]),(TargetFile NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/test/Spec.hs",fromList ["/home/dewi/tmp/haskellTut/hell5/helloworld5/test/Spec.hs"])]
+2022-07-11T12:32:56.662668Z | Debug | Finished build session
+AsyncCancelled
+2022-07-11T12:32:56.662717Z | Debug | Restarting build session due to new component
+Action Queue: [User TypeCheck]
+Keys: [GhcSessionIO; , GetKnownTargets; ]
+Aborting previous build session took 0.00s 
+2022-07-11T12:32:56.663168Z | Debug | Getting hlint ideas for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/src/Lib.hs"
+2022-07-11T12:32:56.663217Z | Debug | Getting hlint ideas for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/test/Spec.hs"
+2022-07-11T12:32:56.663266Z | Debug | Getting hlint ideas for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/app/Main.hs"
+2022-07-11T12:32:56.762284Z | Info | Cradle path: src/Lib.hs
+2022-07-11T12:32:56.762412Z | Warning | No [cradle](https://github.com/mpickering/hie-bios#hie-bios) found for src/Lib.hs.
+Proceeding with [implicit cradle](https://hackage.haskell.org/package/implicit-hie).
+You should ignore this message, unless you see a 'Multi Cradle: No prefixes matched' error.
+2022-07-11T12:32:56.764338Z | Debug | Cradle: Cradle {cradleRootDir = "/home/dewi/tmp/haskellTut/hell5/helloworld5", cradleOptsProg = CradleAction: Stack}
+2022-07-11 13:32:56.911061529 [ThreadId 114] INFO hie-bios:	Stack has not been tested with GHC versions above 9.0, and using 9.2.3, this may fail
+2022-07-11 13:32:56.963888077 [ThreadId 114] INFO hie-bios:	Stack has not been tested with Cabal versions above 3.4, but version 3.6.3.0 was found, this may fail
+2022-07-11 13:32:57.159231144 [ThreadId 114] INFO hie-bios:	Configuring GHCi with the following packages: helloworld5
+2022-07-11 13:32:57.343720315 [ThreadId 122] INFO hie-bios:	Stack has not been tested with GHC versions above 9.0, and using 9.2.3, this may fail
+2022-07-11 13:32:57.396040083 [ThreadId 122] INFO hie-bios:	Stack has not been tested with Cabal versions above 3.4, but version 3.6.3.0 was found, this may fail
+2022-07-11 13:32:57.535934727 [ThreadId 122] INFO hie-bios:	Stack has not been tested with GHC versions above 9.0, and using 9.2.3, this may fail
+2022-07-11 13:32:57.587732427 [ThreadId 122] INFO hie-bios:	Stack has not been tested with Cabal versions above 3.4, but version 3.6.3.0 was found, this may fail
+2022-07-11 13:32:57.599102472 [ThreadId 124] INFO hie-bios:	/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/install/x86_64-linux-tinfo6/757942beef36abb5767af08b907075e026390116ad91957d758e122bd1dc518c/9.2.3/pkgdb:/home/dewi/.stack/snapshots/x86_64-linux-tinfo6/757942beef36abb5767af08b907075e026390116ad91957d758e122bd1dc518c/9.2.3/pkgdb:/home/dewi/.stack/programs/x86_64-linux/ghc-tinfo6-9.2.3/lib/ghc-9.2.3/package.conf.d
+2022-07-11T12:32:58.420335Z | Debug | Session loading result: Right (ComponentOptions {componentOptions = ["-i","-odir=/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/odir","-hidir=/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/odir","-hide-all-packages","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/src","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/autogen","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/global-autogen","-stubdir=/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build","-package-id=base-4.16.2.0","-optP-include","-optP/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/ghci/3a9fce2d/cabal_macros.h","-ghci-script=/tmp/haskell-stack-ghci/5a9af029/ghci-script","-package-db","/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/install/x86_64-linux-tinfo6/757942beef36abb5767af08b907075e026390116ad91957d758e122bd1dc518c/9.2.3/pkgdb","-package-db","/home/dewi/.stack/snapshots/x86_64-linux-tinfo6/757942beef36abb5767af08b907075e026390116ad91957d758e122bd1dc518c/9.2.3/pkgdb","-package-db","/home/dewi/.stack/programs/x86_64-linux/ghc-tinfo6-9.2.3/lib/ghc-9.2.3/package.conf.d"], componentRoot = "/home/dewi/tmp/haskellTut/hell5/helloworld5", componentDependencies = ["helloworld5.cabal","package.yaml","stack.yaml"]},"/home/dewi/.stack/programs/x86_64-linux/ghc-tinfo6-9.2.3/lib/ghc-9.2.3")
+2022-07-11T12:32:58.450909Z | Info | Interface files cache directory: /home/dewi/.cache/ghcide/main-350b44c34fcbb5f99c78ee58fa7ea9e407b631b1
+2022-07-11T12:32:58.451072Z | Info | Interface files cache directory: /home/dewi/.cache/ghcide/main-350b44c34fcbb5f99c78ee58fa7ea9e407b631b1
+2022-07-11T12:32:58.451146Z | Info | Making new HscEnv. In-place unit ids: [main, main]
+2022-07-11T12:32:58.457922Z | Debug | New component cache HscEnvEq: (([],Just HscEnvEq 7),fromList [("helloworld5.cabal",Just 2022-07-09 09:28:55.343034217 UTC),("package.yaml",Just 2022-07-09 09:28:55.339034298 UTC),("stack.yaml",Just 2022-07-09 09:34:10.876687819 UTC)])
+2022-07-11T12:32:58.460484Z | Debug | New component cache HscEnvEq: (([],Just HscEnvEq 8),fromList [("helloworld5.cabal",Just 2022-07-09 09:28:55.343034217 UTC),("package.yaml",Just 2022-07-09 09:28:55.339034298 UTC),("stack.yaml",Just 2022-07-09 09:34:10.876687819 UTC)])
+2022-07-11T12:32:58.463556Z | Debug | Known files updated:
+  fromList [(TargetModule (ModuleName "Lib"),fromList ["/home/dewi/tmp/haskellTut/hell5/helloworld5/src/Lib.hs"]),(TargetModule (ModuleName "Paths_helloworld5"),fromList ["/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/helloworld5-test/autogen/Paths_helloworld5.hs"]),(TargetFile NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/src/Lib.hs",fromList ["/home/dewi/tmp/haskellTut/hell5/helloworld5/src/Lib.hs"]),(TargetFile NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/test/Spec.hs",fromList ["/home/dewi/tmp/haskellTut/hell5/helloworld5/test/Spec.hs"])]
+2022-07-11T12:32:58.463910Z | Debug | Finished build session
+AsyncCancelled
+2022-07-11T12:32:58.463968Z | Debug | Restarting build session due to new component
+Action Queue: [User TypeCheck]
+Keys: [GhcSessionIO; , GetKnownTargets; ]
+Aborting previous build session took 0.00s 
+2022-07-11T12:32:58.464225Z | Debug | Getting hlint ideas for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/app/Main.hs"
+2022-07-11T12:32:58.464292Z | Debug | Getting hlint ideas for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/test/Spec.hs"
+2022-07-11T12:32:58.464391Z | Debug | Getting hlint ideas for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/src/Lib.hs"
+2022-07-11T12:32:58.465075Z | Info | Cradle path: app/Main.hs
+2022-07-11T12:32:58.465221Z | Warning | No [cradle](https://github.com/mpickering/hie-bios#hie-bios) found for app/Main.hs.
+Proceeding with [implicit cradle](https://hackage.haskell.org/package/implicit-hie).
+You should ignore this message, unless you see a 'Multi Cradle: No prefixes matched' error.
+2022-07-11T12:32:58.467512Z | Debug | Cradle: Cradle {cradleRootDir = "/home/dewi/tmp/haskellTut/hell5/helloworld5", cradleOptsProg = CradleAction: Stack}
+2022-07-11T12:32:58.469290Z | Debug | Using extensions for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/test/Spec.hs": [ MonomorphismRestriction
+                                                                                                     , RelaxedPolyRec
+                                                                                                     , ForeignFunctionInterface
+                                                                                                     , ImplicitPrelude
+                                                                                                     , ScopedTypeVariables
+                                                                                                     , BangPatterns
+                                                                                                     , RecordPuns
+                                                                                                     , GADTSyntax
+                                                                                                     , DoAndIfThenElse
+                                                                                                     , ConstraintKinds
+                                                                                                     , PolyKinds
+                                                                                                     , InstanceSigs
+                                                                                                     , StandaloneDeriving
+                                                                                                     , DeriveDataTypeable
+                                                                                                     , DeriveFunctor
+                                                                                                     , DeriveTraversable
+                                                                                                     , DeriveFoldable
+                                                                                                     , DeriveGeneric
+                                                                                                     , DeriveLift
+                                                                                                     , TypeSynonymInstances
+                                                                                                     , FlexibleContexts
+                                                                                                     , FlexibleInstances
+                                                                                                     , ConstrainedClassMethods
+                                                                                                     , MultiParamTypeClasses
+                                                                                                     , ExistentialQuantification
+                                                                                                     , EmptyDataDecls
+                                                                                                     , KindSignatures
+                                                                                                     , GeneralizedNewtypeDeriving
+                                                                                                     , PostfixOperators
+                                                                                                     , TupleSections
+                                                                                                     , PatternGuards
+                                                                                                     , RankNTypes
+                                                                                                     , TypeOperators
+                                                                                                     , ExplicitForAll
+                                                                                                     , TraditionalRecordSyntax
+                                                                                                     , BinaryLiterals
+                                                                                                     , HexFloatLiterals
+                                                                                                     , EmptyCase
+                                                                                                     , NamedWildCards
+                                                                                                     , TypeApplications
+                                                                                                     , EmptyDataDeriving
+                                                                                                     , NumericUnderscores
+                                                                                                     , StarIsType
+                                                                                                     , ImportQualifiedPost
+                                                                                                     , StandaloneKindSignatures
+                                                                                                     , FieldSelectors ]
+2022-07-11 13:32:58.620063936 [ThreadId 206] INFO hie-bios:	Stack has not been tested with GHC versions above 9.0, and using 9.2.3, this may fail
+2022-07-11 13:32:58.674173655 [ThreadId 206] INFO hie-bios:	Stack has not been tested with Cabal versions above 3.4, but version 3.6.3.0 was found, this may fail
+2022-07-11 13:32:58.75699401 [ThreadId 206] INFO hie-bios:	Using main module: 1. Package `helloworld5' component helloworld5:exe:helloworld5-exe with main-is file: /home/dewi/tmp/haskellTut/hell5/helloworld5/app/Main.hs
+2022-07-11 13:32:58.874360058 [ThreadId 206] INFO hie-bios:	The following GHC options are incompatible with GHCi and have not been passed to it: -threaded
+2022-07-11 13:32:58.874460735 [ThreadId 206] INFO hie-bios:	Configuring GHCi with the following packages: helloworld5
+2022-07-11 13:32:59.048188188 [ThreadId 245] INFO hie-bios:	Stack has not been tested with GHC versions above 9.0, and using 9.2.3, this may fail
+2022-07-11 13:32:59.100541559 [ThreadId 245] INFO hie-bios:	Stack has not been tested with Cabal versions above 3.4, but version 3.6.3.0 was found, this may fail
+2022-07-11 13:32:59.24073637 [ThreadId 245] INFO hie-bios:	Stack has not been tested with GHC versions above 9.0, and using 9.2.3, this may fail
+2022-07-11 13:32:59.292751583 [ThreadId 245] INFO hie-bios:	Stack has not been tested with Cabal versions above 3.4, but version 3.6.3.0 was found, this may fail
+2022-07-11 13:32:59.303521174 [ThreadId 247] INFO hie-bios:	/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/install/x86_64-linux-tinfo6/757942beef36abb5767af08b907075e026390116ad91957d758e122bd1dc518c/9.2.3/pkgdb:/home/dewi/.stack/snapshots/x86_64-linux-tinfo6/757942beef36abb5767af08b907075e026390116ad91957d758e122bd1dc518c/9.2.3/pkgdb:/home/dewi/.stack/programs/x86_64-linux/ghc-tinfo6-9.2.3/lib/ghc-9.2.3/package.conf.d
+2022-07-11T12:33:00.126251Z | Debug | Session loading result: Right (ComponentOptions {componentOptions = ["-i","-odir=/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/odir","-hidir=/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/odir","-hide-all-packages","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/helloworld5-exe","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/app","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/helloworld5-exe/autogen","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/global-autogen","-i/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/helloworld5-exe/helloworld5-exe-tmp","-stubdir=/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build","-package-id=base-4.16.2.0","-package-id=helloworld5-0.1.0.0-5sW9LmCEHg1CeB0emcgCf9","-rtsopts","-with-rtsopts=-N","-optP-include","-optP/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/ghci/a895510e/cabal_macros.h","-ghci-script=/tmp/haskell-stack-ghci/9dc2f7bd/ghci-script","-package-db","/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/install/x86_64-linux-tinfo6/757942beef36abb5767af08b907075e026390116ad91957d758e122bd1dc518c/9.2.3/pkgdb","-package-db","/home/dewi/.stack/snapshots/x86_64-linux-tinfo6/757942beef36abb5767af08b907075e026390116ad91957d758e122bd1dc518c/9.2.3/pkgdb","-package-db","/home/dewi/.stack/programs/x86_64-linux/ghc-tinfo6-9.2.3/lib/ghc-9.2.3/package.conf.d"], componentRoot = "/home/dewi/tmp/haskellTut/hell5/helloworld5", componentDependencies = ["helloworld5.cabal","package.yaml","stack.yaml"]},"/home/dewi/.stack/programs/x86_64-linux/ghc-tinfo6-9.2.3/lib/ghc-9.2.3")
+2022-07-11T12:33:00.157411Z | Info | Interface files cache directory: /home/dewi/.cache/ghcide/main-546c331f1c0942bbb0870e3a9aa25929817ca963
+2022-07-11T12:33:00.157574Z | Info | Interface files cache directory: /home/dewi/.cache/ghcide/main-546c331f1c0942bbb0870e3a9aa25929817ca963
+2022-07-11T12:33:00.157656Z | Info | Interface files cache directory: /home/dewi/.cache/ghcide/main-546c331f1c0942bbb0870e3a9aa25929817ca963
+2022-07-11T12:33:00.157729Z | Info | Making new HscEnv. In-place unit ids: [main, main, main]
+2022-07-11T12:33:00.164566Z | Debug | New component cache HscEnvEq: (([],Just HscEnvEq 11),fromList [("helloworld5.cabal",Just 2022-07-09 09:28:55.343034217 UTC),("package.yaml",Just 2022-07-09 09:28:55.339034298 UTC),("stack.yaml",Just 2022-07-09 09:34:10.876687819 UTC)])
+2022-07-11T12:33:00.167105Z | Debug | New component cache HscEnvEq: (([],Just HscEnvEq 12),fromList [("helloworld5.cabal",Just 2022-07-09 09:28:55.343034217 UTC),("package.yaml",Just 2022-07-09 09:28:55.339034298 UTC),("stack.yaml",Just 2022-07-09 09:34:10.876687819 UTC)])
+2022-07-11T12:33:00.169563Z | Debug | New component cache HscEnvEq: (([],Just HscEnvEq 13),fromList [("helloworld5.cabal",Just 2022-07-09 09:28:55.343034217 UTC),("package.yaml",Just 2022-07-09 09:28:55.339034298 UTC),("stack.yaml",Just 2022-07-09 09:34:10.876687819 UTC)])
+2022-07-11T12:33:00.174035Z | Debug | Known files updated:
+  fromList [(TargetModule (ModuleName "Lib"),fromList ["/home/dewi/tmp/haskellTut/hell5/helloworld5/src/Lib.hs"]),(TargetModule (ModuleName "Paths_helloworld5"),fromList ["/home/dewi/tmp/haskellTut/hell5/helloworld5/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.6.3.0/build/helloworld5-test/autogen/Paths_helloworld5.hs"]),(TargetFile NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/src/Lib.hs",fromList ["/home/dewi/tmp/haskellTut/hell5/helloworld5/src/Lib.hs"]),(TargetFile NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/app/Main.hs",fromList ["/home/dewi/tmp/haskellTut/hell5/helloworld5/app/Main.hs"]),(TargetFile NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/test/Spec.hs",fromList ["/home/dewi/tmp/haskellTut/hell5/helloworld5/test/Spec.hs"])]
+2022-07-11T12:33:00.174327Z | Debug | Finished build session
+AsyncCancelled
+2022-07-11T12:33:00.174386Z | Debug | Restarting build session due to new component
+Action Queue: [User TypeCheck]
+Keys: [GhcSessionIO; , GetKnownTargets; ]
+Aborting previous build session took 0.00s 
+2022-07-11T12:33:00.174629Z | Debug | Getting hlint ideas for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/app/Main.hs"
+2022-07-11T12:33:00.174771Z | Debug | Getting hlint ideas for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/src/Lib.hs"
+2022-07-11T12:33:00.177234Z | Debug | Getting hlint ideas for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/test/Spec.hs"
+2022-07-11T12:33:00.177339Z | Debug | Using extensions for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/test/Spec.hs": [ MonomorphismRestriction
+                                                                                                     , RelaxedPolyRec
+                                                                                                     , ForeignFunctionInterface
+                                                                                                     , ImplicitPrelude
+                                                                                                     , ScopedTypeVariables
+                                                                                                     , BangPatterns
+                                                                                                     , RecordPuns
+                                                                                                     , GADTSyntax
+                                                                                                     , DoAndIfThenElse
+                                                                                                     , ConstraintKinds
+                                                                                                     , PolyKinds
+                                                                                                     , InstanceSigs
+                                                                                                     , StandaloneDeriving
+                                                                                                     , DeriveDataTypeable
+                                                                                                     , DeriveFunctor
+                                                                                                     , DeriveTraversable
+                                                                                                     , DeriveFoldable
+                                                                                                     , DeriveGeneric
+                                                                                                     , DeriveLift
+                                                                                                     , TypeSynonymInstances
+                                                                                                     , FlexibleContexts
+                                                                                                     , FlexibleInstances
+                                                                                                     , ConstrainedClassMethods
+                                                                                                     , MultiParamTypeClasses
+                                                                                                     , ExistentialQuantification
+                                                                                                     , EmptyDataDecls
+                                                                                                     , KindSignatures
+                                                                                                     , GeneralizedNewtypeDeriving
+                                                                                                     , PostfixOperators
+                                                                                                     , TupleSections
+                                                                                                     , PatternGuards
+                                                                                                     , RankNTypes
+                                                                                                     , TypeOperators
+                                                                                                     , ExplicitForAll
+                                                                                                     , TraditionalRecordSyntax
+                                                                                                     , BinaryLiterals
+                                                                                                     , HexFloatLiterals
+                                                                                                     , EmptyCase
+                                                                                                     , NamedWildCards
+                                                                                                     , TypeApplications
+                                                                                                     , EmptyDataDeriving
+                                                                                                     , NumericUnderscores
+                                                                                                     , StarIsType
+                                                                                                     , ImportQualifiedPost
+                                                                                                     , StandaloneKindSignatures
+                                                                                                     , FieldSelectors ]
+2022-07-11T12:33:00.186425Z | Debug | Using extensions for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/app/Main.hs": [ MonomorphismRestriction
+                                                                                                    , RelaxedPolyRec
+                                                                                                    , ForeignFunctionInterface
+                                                                                                    , ImplicitPrelude
+                                                                                                    , ScopedTypeVariables
+                                                                                                    , BangPatterns
+                                                                                                    , RecordPuns
+                                                                                                    , GADTSyntax
+                                                                                                    , DoAndIfThenElse
+                                                                                                    , ConstraintKinds
+                                                                                                    , PolyKinds
+                                                                                                    , InstanceSigs
+                                                                                                    , StandaloneDeriving
+                                                                                                    , DeriveDataTypeable
+                                                                                                    , DeriveFunctor
+                                                                                                    , DeriveTraversable
+                                                                                                    , DeriveFoldable
+                                                                                                    , DeriveGeneric
+                                                                                                    , DeriveLift
+                                                                                                    , TypeSynonymInstances
+                                                                                                    , FlexibleContexts
+                                                                                                    , FlexibleInstances
+                                                                                                    , ConstrainedClassMethods
+                                                                                                    , MultiParamTypeClasses
+                                                                                                    , ExistentialQuantification
+                                                                                                    , EmptyDataDecls
+                                                                                                    , KindSignatures
+                                                                                                    , GeneralizedNewtypeDeriving
+                                                                                                    , PostfixOperators
+                                                                                                    , TupleSections
+                                                                                                    , PatternGuards
+                                                                                                    , RankNTypes
+                                                                                                    , TypeOperators
+                                                                                                    , ExplicitForAll
+                                                                                                    , TraditionalRecordSyntax
+                                                                                                    , BinaryLiterals
+                                                                                                    , HexFloatLiterals
+                                                                                                    , EmptyCase
+                                                                                                    , NamedWildCards
+                                                                                                    , TypeApplications
+                                                                                                    , EmptyDataDeriving
+                                                                                                    , NumericUnderscores
+                                                                                                    , StarIsType
+                                                                                                    , ImportQualifiedPost
+                                                                                                    , StandaloneKindSignatures
+                                                                                                    , FieldSelectors ]
+2022-07-11T12:33:00.190609Z | Debug | Using extensions for  NormalizedFilePath "/home/dewi/tmp/haskellTut/hell5/helloworld5/src/Lib.hs": [ MonomorphismRestriction
+                                                                                                   , RelaxedPolyRec
+                                                                                                   , ForeignFunctionInterface
+                                                                                                   , ImplicitPrelude
+                                                                                                   , ScopedTypeVariables
+                                                                                                   , BangPatterns
+                                                                                                   , RecordPuns
+                                                                                                   , GADTSyntax
+                                                                                                   , DoAndIfThenElse
+                                                                                                   , ConstraintKinds
+                                                                                                   , PolyKinds
+                                                                                                   , InstanceSigs
+                                                                                                   , StandaloneDeriving
+                                                                                                   , DeriveDataTypeable
+                                                                                                   , DeriveFunctor
+                                                                                                   , DeriveTraversable
+                                                                                                   , DeriveFoldable
+                                                                                                   , DeriveGeneric
+                                                                                                   , DeriveLift
+                                                                                                   , TypeSynonymInstances
+                                                                                                   , FlexibleContexts
+                                                                                                   , FlexibleInstances
+                                                                                                   , ConstrainedClassMethods
+                                                                                                   , MultiParamTypeClasses
+                                                                                                   , ExistentialQuantification
+                                                                                                   , EmptyDataDecls
+                                                                                                   , KindSignatures
+                                                                                                   , GeneralizedNewtypeDeriving
+                                                                                                   , PostfixOperators
+                                                                                                   , TupleSections
+                                                                                                   , PatternGuards
+                                                                                                   , RankNTypes
+                                                                                                   , TypeOperators
+                                                                                                   , ExplicitForAll
+                                                                                                   , TraditionalRecordSyntax
+                                                                                                   , BinaryLiterals
+                                                                                                   , HexFloatLiterals
+                                                                                                   , EmptyCase
+                                                                                                   , NamedWildCards
+                                                                                                   , TypeApplications
+                                                                                                   , EmptyDataDeriving
+                                                                                                   , NumericUnderscores
+                                                                                                   , StarIsType
+                                                                                                   , ImportQualifiedPost
+                                                                                                   , StandaloneKindSignatures
+                                                                                                   , FieldSelectors ]
+2022-07-11T12:33:00.202652Z | Debug | Finished: User TypeCheck Took: 0.03s
+2022-07-11T12:33:00.205392Z | Debug | Finished: GetHie Took: 0.00s
+2022-07-11T12:33:00.205936Z | Debug | Finished: GenerateCore Took: 0.00s
+
+Completed (3 files worked, 0 files failed)
