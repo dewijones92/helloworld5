@@ -3,9 +3,10 @@ module Lib
     ) where
 
 someFunc :: IO ()
-someFunc = do
- putStrLn "asdasd"
-
+someFunc = do line <- getLine   
+              let line' = reverse line  
+              putStrLn $ "You said " ++ line' ++ " backwards!"  
+              putStrLn $ "Yes, you really said" ++ line' ++ " backwards!"  
 
 
 class DFunctor f where
