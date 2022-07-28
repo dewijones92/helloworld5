@@ -20,7 +20,7 @@ hmmm2 = do line <- dfmap (intersperse '-' . reverse . map toUpper) getLine
            
 
 instance DFunctor ((->) r) where
-  dfmap f g = f.g
+  dfmap = (.)
 
 
 class DFunctor f where
