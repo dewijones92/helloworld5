@@ -16,11 +16,11 @@ hmm1 = do line <- getLine
 
 hmmm2 = do line <- dfmap (intersperse '-' . reverse . map toUpper) getLine
            print $ dfmap (*3) (+100) 1
+           print $ (+3) `dfmap` (+4) $ 1
+           print $ (*3) . (+100) $ 1
            putStrLn line
            
 
-instance DFunctor ((->) r) where
-  dfmap = (.)
 
 
 class DFunctor f where
