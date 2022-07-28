@@ -1,10 +1,12 @@
 module Lib
-    ( someFunc,
+    ( someFunc 
     ) where
+import Data.List (intersperse)
+import Data.Char
 
 someFunc :: IO ()
 someFunc = do
-  hmm1
+  hmmm2
 
 hmm1 :: IO ()
 hmm1 = do line <- getLine   
@@ -12,6 +14,13 @@ hmm1 = do line <- getLine
           putStrLn $ "You said " ++ line' ++ " backwards!"  
           putStrLn $ "Yes, you really said" ++ line' ++ " backwards!"  
 
+hmmm2 = do line <- dfmap (intersperse '-' . reverse . map toUpper) getLine
+           print $ dfmap (*3) (+100) 1
+           putStrLn line
+           
+
+instance DFunctor ((->) r) where
+  dfmap f g = f.g
 
 
 class DFunctor f where
