@@ -14,13 +14,38 @@ hmm1 = do line <- getLine
           putStrLn $ "You said " ++ line' ++ " backwards!"  
           putStrLn $ "Yes, you really said" ++ line' ++ " backwards!"  
 
-hmmm2 = do line <- dfmap (intersperse '-' . reverse . map toUpper) getLine
-           print $ dfmap (*3) (+100) 1
-           print $ (+3) `dfmap` (+4) $ 1
-           print $ (*3) . (+100) $ 1
-           putStrLn line
+hmmm2 = do 
+          print $ dfmap (*3) (+100) 1
+          print $ (+3) `dfmap` (+4) $ 1
+          print $ (*3) . (+100) $ 1
+          let ggg =  dfmap (replicate 3) (Left "foo")
+          print $ dfmap (*2) (Just 2)
+          let dewi1 = fmap (++) (Just "hey")
+          let lol = Just (++ "aas")
+          putStrLn "asd"
+
+instance DFunctor CMaybe where
+  dfmap f CNothing = CNothing
+  dfmap f (CJust counter x) = CJust (counter + 1) (f x)
+
+
+data CMaybe a = CNothing | CJust Int a deriving (Show)
            
 
+dewiadd :: (Num a) => a -> a -> a
+dewiadd = (+)
+
+instance DFunctor (Maybe) where
+  dfmap f (Just a) = Just (f a)
+  dfmap _ Nothing  = Nothing
+
+instance DFunctor ( Either a) where
+  dfmap f (Right a) = Right (f a)
+  dfmap f (Left a) = Left a
+
+instance DFunctor ((->) r) where
+  dfmap = (.)
+  -- dfmap = (.)
 
 
 class DFunctor f where
