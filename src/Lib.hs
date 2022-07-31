@@ -40,6 +40,9 @@ instance DFunctor CMaybe where
 
 data Tree a = Tip a | Branch (Tree a) (Tree a)
 
+instance Functor Tree where
+  fmap f (Tip a) = Tip (f a)
+  fmap f (Branch left right) = Branch (fmap f left) (fmap f right)
 
 data CMaybe a = CNothing | CJust Int a deriving (Show)
            
