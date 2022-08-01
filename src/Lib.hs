@@ -24,6 +24,10 @@ hmmm2 = do
           let dewi22 = fmap (*) [1,2,3,4]
           let dewres = fmap (\f -> f 9) dewi22
 
+          let x = Branch (Tip 4) (Branch (Tip 5) (Tip 6))
+          print x
+          let xx = (*) <$> x
+
 
           putStrLn "asd"
 
@@ -34,11 +38,14 @@ instance Functor Maybe2 where
   fmap f (Just2 a) = Just2 (f a)
   fmap f Nothing2 = Nothing2
 
+instance Applicative Maybe2 where
+  pure = Just2
+
 instance DFunctor CMaybe where
   dfmap f CNothing = CNothing
   dfmap f (CJust counter x) = CJust (counter + 1) (f x)
 
-data Tree a = Tip a | Branch (Tree a) (Tree a)
+data Tree a = Tip a | Branch (Tree a) (Tree a) deriving Show
 
 instance Functor Tree where
   fmap f (Tip a) = Tip (f a)
